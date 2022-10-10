@@ -23,13 +23,17 @@ https://my-healthh.herokuapp.com/
 
 ### Business Problem
 ```
-Currently, National Heart Centre Singapore (NHCS) experiences a high wastage of time and resources to run diagnostic tests for 70% <br>
-of all referrals from polyclinics who turn out to have no salient cardiac irregularities and did not need to see a specialist.
+Currently, National Heart Centre Singapore (NHCS) experiences a high wastage of time and resources to run diagnostic tests for 
+70%of all referrals from polyclinics who turn out to have no salient cardiac irregularities and did not need to see a specialist.
 ```
 
 ### Solution & Business Opportunity 
 ```
-Patients do not have to make so many unnecessary visits to NHCS and the heart centre can direct its resources and care to patients who require it most. Given that most patients have been established to be going for checkups simply for “peace of mind”, building an app that utilizes Analytics and Machine Learning models with high accuracy in identifying whether an individual has heart disease from certain independent variables would be beneficial for patients. Moreover, this also allows individuals who feel that they are currently healthy to also check on their risk status just in case they have any heart issues that they are unaware of.
+Patients do not have to make so many unnecessary visits to NHCS and the heart centre can direct its resources and care to patients who 
+require it most. Given that most patients have been established to be going for checkups simply for “peace of mind”, building an app 
+that utilizes Analytics and Machine Learning models with high accuracy in identifying whether an individual has heart disease from 
+certain independent variables would be beneficial for patients. Moreover, this also allows individuals who feel that they are currently 
+healthy to also check on their risk status just in case they have any heart issues that they are unaware of.
 ```
 ### Predictor Model
 ```
