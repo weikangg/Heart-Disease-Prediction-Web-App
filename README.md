@@ -23,7 +23,8 @@ https://my-healthh.herokuapp.com/
 
 ### Business Problem
 ```
-Currently, National Heart Centre Singapore (NHCS) experiences a high wastage of time and resources to run diagnostic tests for 70% of all referrals from polyclinics who turn out to have no salient cardiac irregularities and did not need to see a specialist.
+Currently, National Heart Centre Singapore (NHCS) experiences a high wastage of time and resources to run diagnostic tests for 70% <br>
+of all referrals from polyclinics who turn out to have no salient cardiac irregularities and did not need to see a specialist.
 ```
 
 ### Solution & Business Opportunity 
