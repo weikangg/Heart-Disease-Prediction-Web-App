@@ -37,5 +37,5 @@ healthy to also check on their risk status just in case they have any heart issu
 ```
 ### Predictor Model
 ```
-Logistic Regression in R, using glm function in R, with a prediction accuracy of **86%-89%**!
+Logistic Regression in R, using glm function in R, with a prediction accuracy of 86%-89%!
 ```
