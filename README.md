@@ -1,5 +1,3 @@
-# Heart-Disease-Prediction-Web-App
-
 ### Setup
 ```
 To test on local drive, download the zip file/clone the repo and run the code in main.R, change the wd() accordingly.
