@@ -7,39 +7,12 @@ library(tidyverse)
 library(cvms)
 library(caTools)
 library(tibble)
-# #---------------------------------------------Setting Working Directory------------------------------------------------------#
-# setwd("C:/Users/Wei Kang/OneDrive - Nanyang Technological University/Year 2/Sem 1/BC2406 Analytics I/BC2406 Course Materials/Group Project/Codes/UI")
-# 
+
 #-----------------------------------Importing Trainset,Test Set and desired Model--------------------------------------------#
 trainset <-fread("heart_failure_prediction_training.csv", stringsAsFactors = TRUE)
 trainset<- trainset[,-1]
 trainset$FastingBS <- factor(trainset$FastingBS)
 trainset$HeartDisease <- factor(trainset$HeartDisease)
-# 
-# testset <-fread("heart_failure_prediction_test.csv", stringsAsFactors = TRUE)
-# testset <- testset[,-1]
-# testset$FastingBS <- factor(testset$FastingBS)
-# testset$HeartDisease <- factor(testset$HeartDisease)
-# 
-# m1 <- readRDS("model.rds")
-# threshold1 <-0.5
-# prob.test <- predict(m1, newdata = testset, type = 'response')
-# m1.predict.test <- ifelse(prob.test > threshold1, "1", "0")
-# table2 <- table(Testset.Actual = testset$HeartDisease, m1.predict.test, deparse.level = 2)
-# table2
-# cfm2 <- as_tibble(table2)
-# cfm2
-# plot_confusion_matrix(cfm2, 
-#                       target_col = "Testset.Actual", 
-#                       prediction_col = "m1.predict.test",
-#                       counts_col = "n",
-#                       place_x_axis_above = FALSE,
-#                       add_col_percentages = FALSE,
-#                       add_row_percentages = FALSE)
-# 
-# # Overall Accuracy
-# accuracy = mean(m1.predict.test == testset$HeartDisease)
-# accuracy
 
 #-------------------------------------------------Building the UI------------------------------------------------------------#
 

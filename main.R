@@ -1,7 +1,3 @@
-install.packages('rsconnect')
-library(rsconnect)
-rsconnect::setAccountInfo(name='weikang', token='A04975A900526EE9A60201EE0FF8E10E', secret='IdYM81VulwRTi+t3YOYVoa9WATML+sxVYOPQYuXi')
-# rsconnect::deployApp("C:/Users/Wei Kang/OneDrive - Nanyang Technological University/Year 2/Sem 1/BC2406 Analytics I/BC2406 Course Materials/Group Project/Codes/MyHealth")
 #----------------------------------------------------Importing Libraries-----------------------------------------------------#
 list.of.packages <- c("data.table", "shiny", "shinythemes", "RCurl", "tidyverse", "cvms", "caTools", "tibble", "markdown")
 new.packages <- list.of.packages[!(list.of.packages %in% installed.packages()[,"Package"])]
