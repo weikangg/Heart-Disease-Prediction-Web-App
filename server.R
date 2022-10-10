@@ -1,4 +1,9 @@
-server <- function(input, output, session) {
+library(data.table)
+
+m1 <- readRDS("model.rds")
+
+
+shinyServer(function(input, output, session) {
   
   input_df <- reactive({
     data.frame(Age = as.numeric(input$Age),
@@ -55,6 +60,4 @@ server <- function(input, output, session) {
       return("Server is ready for calculation.")
     }
   })
-  
-  
-}
+})
