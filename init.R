@@ -1,4 +1,4 @@
-my_packages = c("markdown", "shiny", "shinythemes", "data.table", "RCurl", "tidyverse", "cvms", "caTools", "tibble")
+my_packages = c("data.table", "shiny", "shinythemes", "RCurl", "tidyverse", "cvms", "caTools", "tibble", "markdown", "shinyWidgets", "shinydashboard")
 
 install_if_missing = function(p) {
   if (p %in% rownames(installed.packages()) == FALSE) {

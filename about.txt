@@ -1,39 +1,83 @@
 ## About
 **MyHealth** is a web app which can accurately predict whether you are at risk of heart disease or not from the comfort of your home using generic info as well as your lab test results.
-The accuracy of the Machine Learning models used here is at about 86%-89%, it utilises a Logistic Regression Model behind the scenes to help predict whether you are risk.
+The accuracy of the Machine Learning models used here is at about 86%-89%, it utilises 2 Logistic Regression Models behind the scenes to help predict whether you are at risk.
 This was done for a school project module, BC2406 Analytics in Nanyang Technological University (NTU).
 
 ## Context
-Cardiovascular diseases (CVDs) are the number 1 cause of death globally, taking an estimated 17.9 million lives each year, which accounts for 31% of all deaths worldwide. Four out of 5CVD deaths are due to heart attacks and strokes, and one-third of these deaths occur prematurely in people under 70 years of age. Heart failure is a common event caused by CVDs and this dataset contains 11 features that can be used to predict a possible heart disease.
-People with cardiovascular disease or who are at high cardiovascular risk (due to the presence of one or more risk factors such as hypertension, diabetes, hyperlipidaemia or already established disease) need early detection and management wherein a machine learning model can be of great help
+Cardiovascular diseases (CVDs) are the number 1 cause of death globally, taking an estimated 17.9 million lives each year, which accounts for 31% of all deaths worldwide. Four out of 5CVD deaths are due to heart attacks and strokes, and one-third of these deaths occur prematurely in people under 70 years of age. Heart failure is a common event caused by CVDs.
+People with cardiovascular disease or who are at high cardiovascular risk (due to the presence of one or more risk factors such as hypertension, diabetes, hyperlipidaemia or already established disease) need early detection and management wherein a machine learning model can be of great help.
 
-## Understanding what to input
+## Understanding what to input for the General Variable
 We understand that you may face troubles on understanding what do the respective variables mean, hence we have prepared some information that you may need to take into account:
-> Age: Your Age (years)
+> * Age: Your Age within a Range(years) <br>
+    *  1 : 18-24 <br>
+    *  2 : 25-29 <br>
+    *  3 : 30-34 <br>
+    *  4 : 35-39 <br>
+    *  5 : 40-44 <br>
+    *  6 : 45-49 <br>
+    *  7 : 50-54 <br>
+    *  8 : 55-59 <br>
+    *  9 : 60-64 <br>
+    *  10: 65-69 <br>
+    *  11: 70-74 <br>
+    *  12: 75-79 <br>
+    *  13: >= 80 <br>
 
-> Sex: Your Sex (M: Male, F: Female)
+> * Sex: Male/Female
 
-> ChestPainType: TA: Typical Angina, ATA: Atypical Angina, NAP: Non-Anginal Pain, ASY: Asymptomatic (From Medical Results)
+> * High Blood Pressure: Yes/No
 
-> RestingBP: resting blood pressure (mm Hg) (From Medical Results)
+> * High Cholesterol: Yes/No
 
-> Cholesterol: serum cholesterol (mm/dl) (From Medical Results)
+> * Smoker: Have you smoked at least 100 cigarettes in your entire life? [5 Packets]
 
-> FastingBS: fasting blood sugar (1: if FastingBS > 120 mg/dl, 0: otherwise) (From Medical Results)
+> * Stroke: Yes/No
 
-> RestingECG: resting electrocardiogram results (Normal: Normal, ST: having ST-T wave abnormality (T wave inversions and/or ST elevation or depression of > 0.05 mV), LVH: showing probable or definite left ventricular hypertrophy by Estes' criteria)
+> * Diabetes: Yes/Pre-diabetes or borderline diabetes/No
 
-> MaxHR: maximum heart rate achieved (By counting at your wrist/fitness tracker/medical results)
+> * GenHlth: Would you say that in general your health is: Scale 1-5 
+    * 1 is Excellent -> 5 is Poor
 
-> ExerciseAngina: exercise-induced angina (Y: Yes, N: No) (From Medical Results)
+> * MentHlth: Now thinking about your mental health, which includes stress, depression, and problems with emotions, for how many days during the past 30 days was your mental health not good?
+    - Scale will be 0-30. This is the number of days. 
 
-> Oldpeak: ST depression induced by exercise relative to rest (Numeric value measured in depression)
+> * PhysHlth: Now thinking about your physical health, which includes physical illness and injury, for how many days during the past
+30 days was your physical health not good?
+    - Scale will be 0-30. This is the number of days.
 
-> ST_Slope: the slope of the peak exercise ST segment (Up: upsloping, Flat: flat, Down: downsloping) (From ECG stress test)
+> * Income: Your annual income
+    * 1: < $10000
+    * 2: 10000 - 20000
+    * 3: 20000 - 30000
+    * 4: 40000 - 50000
+    * 5: 50000 - 60000
+    * 6: 60000 - 70000
+    * 7: 70000 - 75000
+    * 8: > 75000
+
+## Understanding what to input for the Lab Variables
+We understand that you may face troubles on understanding what do the respective variables mean, hence we have prepared some information that you may need to take into account:
+> * Sex: Male, Female
+
+> * ChestPainType: 
+    * TA: Typical Angina 
+    * ATA: Atypical Angina 
+    * NAP: Non-Anginal Pain
+    * ASY: Asymptomatic (From Medical Results)
+
+> * FastingBS: fasting blood sugar (1: if FastingBS > 120 mg/dl, 0: otherwise) (From Medical Results)
+
+> * ExerciseAngina: exercise-induced angina (Y: Yes, N: No) (From Medical Results)
+
+> * Oldpeak: ST depression induced by exercise relative to rest (Numeric value measured in depression)
+
+> * ST_Slope: the slope of the peak exercise ST segment (Up: upsloping, Flat: flat, Down: downsloping) (From ECG stress test)
 
 ## Understanding the probability
 
 If the probability calculated from the model is > 0.5, the algorithm predicts the user to be at risk of heart disease. Else, the user is predicted to be of low risk.
 
-## References
-1. Heart Failure Prediction Dataset(https://www.kaggle.com/datasets/fedesoriano/heart-failure-prediction)
+## References / Datasets
+1. Heart Failure Prediction Dataset (https://www.kaggle.com/datasets/fedesoriano/heart-failure-prediction)
+2. Behavioural Risk Factor Surveillance System (https://www.kaggle.com/datasets/cdc/behavioral-risk-factor-surveillance-system)
