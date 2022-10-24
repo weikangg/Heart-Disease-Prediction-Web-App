@@ -7,7 +7,7 @@ To test on local drive, download the zip file/clone the repo and run the code in
 
 ### Website
 ```
-https://my-healthh.herokuapp.com/
+https://myhealthh.herokuapp.com/
 ```
 
 ### Files
@@ -24,7 +24,7 @@ https://my-healthh.herokuapp.com/
 ### Business Problem
 ```
 Currently, National Heart Centre Singapore (NHCS) experiences a high wastage of time and resources to run diagnostic tests for 
-70%of all referrals from polyclinics who turn out to have no salient cardiac irregularities and did not need to see a specialist.
+70% of all referrals from polyclinics who turn out to have no salient cardiac irregularities and did not need to see a specialist.
 ```
 
 ### Solution & Business Opportunity 
@@ -37,5 +37,5 @@ healthy to also check on their risk status just in case they have any heart issu
 ```
 ### Predictor Model
 ```
-Logistic Regression in R, using glm function in R, with a prediction accuracy of 86%-89%!
+Logistic Regression in R, using glm function in R, with a prediction accuracy of 83%-86%!
 ```
