@@ -1,4 +1,4 @@
-# Heart-Disease-Prediction-Web-App
+# MyHealth
 
 ### Setup
 ```
