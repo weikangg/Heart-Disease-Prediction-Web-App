@@ -14,17 +14,17 @@ library(tidyverse)
 library(cvms)
 library(caTools)
 library(tibble)
-#---------------------------------------------Setting Working Directory------------------------------------------------------#
-setwd("C:/Users/Wei Kang/OneDrive - Nanyang Technological University/Year 2/Sem 1/BC2406 Analytics I/BC2406 Course Materials/Group Project/Codes/Heart-Disease-Predictor-Web-App")
 
 #-----------------------------------Importing Trainset,Test Set and desired Model--------------------------------------------#
-trainset <-fread("heart_failure_prediction_training.csv", stringsAsFactors = TRUE)
+x <- getURL("https://raw.githubusercontent.com/weikangg/MyHealth/main/heart_failure_prediction_training.csv")
+trainset <-fread(text = x,stringsAsFactors = T)
 trainset<- trainset[,-1]
 trainset$FastingBS <- factor(trainset$FastingBS)
 trainset$HeartDisease <- factor(trainset$HeartDisease)
 trainset %>% summary()
 
-brfss_trainset <-fread("brfss_train.csv")
+y<- getURL("https://raw.githubusercontent.com/weikangg/MyHealth/main/brfss_train.csv")
+brfss_trainset <-fread(text = y, stringsAsFactors = T)
 names(brfss_trainset) <- tolower(names(brfss_trainset))
 setnames(brfss_trainset, "heartdiseaseorattack", "HeartDiseaseorAttack")
 brfss_trainset %>% summary()

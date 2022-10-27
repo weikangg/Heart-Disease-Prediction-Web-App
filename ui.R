@@ -12,14 +12,18 @@ library(tibble)
 
 
 #-----------------------------------Importing Trainset,Test Set and desired Model--------------------------------------------#
-trainset <-fread("heart_failure_prediction_training.csv", stringsAsFactors = TRUE)
+
+x <- getURL("https://raw.githubusercontent.com/weikangg/MyHealth/main/heart_failure_prediction_training.csv")
+trainset <-fread(text = x)
 trainset<- trainset[,-1]
 trainset$FastingBS <- factor(trainset$FastingBS)
 trainset$HeartDisease <- factor(trainset$HeartDisease)
-
-brfss_trainset <-fread("brfss_train.csv")
+summary(trainset)
+y<- getURL("https://raw.githubusercontent.com/weikangg/MyHealth/main/brfss_train.csv")
+brfss_trainset <-fread(text = y, stringsAsFactors = T)
 names(brfss_trainset) <- tolower(names(brfss_trainset))
 setnames(brfss_trainset, "heartdiseaseorattack", "HeartDiseaseorAttack")
+summary(brfss_trainset)
 #-------------------------------------------------Building the UI------------------------------------------------------------#
 
 
